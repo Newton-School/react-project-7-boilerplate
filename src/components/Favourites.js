@@ -7,7 +7,7 @@ import { LoginContext } from "../Context/LoginContext";
 
 function Favourites() {
     const { setIsLogin } = useContext(LoginContext);
-    
+
     const styles = {
         display: "flex",
         justifyContent: "column",
@@ -16,22 +16,11 @@ function Favourites() {
 
     function handleClick(e) {
         // complete this delete from favourites function
-        
-    }
-
-    function handleSignOut() {
-        window.localStorage.removeItem("username");
-        window.localStorage.removeItem("password");
-        window.localStorage.removeItem("favourites");
-        setIsLogin(false);
     }
 
     return (
         <div>
-            <div style={styles}>
-                {/* display the favourite hotels here */}
-                
-            </div>
+            <div style={styles}>{/* display the favourite hotels here */}</div>
         </div>
     );
 }
